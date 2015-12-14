@@ -1,1 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<circuit>
+
+ <Carry_Circuit_FullAdder>
+ <GATE>
+   <id>1</id>
+   <Name>AND</Name>
+   <input1>A</input1>
+   <input2>B</input2>
+  </GATE>
+
+  <GATE>
+    <id>2</id>
+    <Name>AND</Name>
+	<input1>B</input1>
+	<input2>C</input2>
+  </GATE>
+
+  <GATE>
+	<id>3</id>
+	<Name>AND</Name>
+	<input1>A</input1>
+	<input2>C</input2>
+  </GATE>
+
+
+  <GATE>
+	<id>4</id>
+	<Name>OR</Name>
+	<input1>id1.o</input1>
+	<input2>id2.o</input2>
+  </GATE>
+
+  <GATE>
+	<id>5</id>
+	<Name>OR</Name>
+	<input1>id4.o</input1>
+	<input2>id3.o</input2>
+  </GATE>
+
+
+ </Carry_Circuit_FullAdder>
+
+ <Sum>
+
+  <GATE>
+	<id>6</id>
+	<Name>XOR</Name>
+	<input1>A</input1>
+	<input2>B</input2>
+  </GATE>
+
+
+  <GATE>
+	<id>7</id>
+	<Name>XOR</Name>
+	<input1>id6.o</input1>
+	<input2>C</input2>
+  </GATE>
+
+ </Sum>
+
+
+</circuit>
